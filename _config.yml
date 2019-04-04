@@ -1,8 +1,8 @@
-title:            muanchiou
-description:      who is muanchiou
-url:              https://muan.co
+title:            ChelebNet
+description:      .zZ
+url:              https://cheleb.net
 permalink:        pretty
-timezone:         America/New_York
+timezone:         Europe/Oslo
 sass:
   sass_dir: assets
   style: :compressed
