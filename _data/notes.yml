@@ -1,3 +1,18 @@
+- date: 2019/07/09 12:25
+  content: |
+    Quick benchmark on how to read/write/store your Pandas dataframe if you don't want to read from CSV all the time. Conclusion:
+
+    1. Parquet gives smallest files
+    2. Feather has fastest read
+    3. HDF5 (no PyTables) has fastest write
+    4. Benchmark suspect. Feather throughput exceeds RAID bandwidth.
+
+    Figures:
+
+    - [File Size Comparison](https://cheleb.net/public/images/2019-07-09_bench_file_size.png)
+    - [Read Speed Comparison](https://cheleb.net/public/images/2019-07-09_bench_read_speed.png)
+    - [Write Speed Comparison](https://cheleb.net/public/images/2019-07-09_bench_write_speed.png)
+
 - date: 2019/04/04 18:00
   content: |
     hello, world!
