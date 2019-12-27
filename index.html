@@ -63,6 +63,18 @@ layout: default
   </ul>
 </details>
 <details>
+  <summary><h2 class="as-text">Posts</h2> <a class="small" href="/feed.xml">[feed]</a></summary>
+
+  <ul class="list list-items">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <time>{{ post.date | date: "%b %d, %Y" }}</time>
+      </li>
+    {% endfor %}
+  </ul>
+</details>
+<details>
   <summary><h2 class="as-text">Hyperlinks &amp; Contact</h2></summary>
   <ul class="list list-items">
     <li>
@@ -86,17 +98,5 @@ layout: default
     {% if site.data.notes.size > 5 %}
       <li class="note"><a class="small" href="/notes">More.</a></li>
     {% endif %}
-  </ul>
-</details>
-<details>
-  <summary><h2 class="as-text">Posts</h2> <a class="small" href="/feed.xml">[feed]</a></summary>
-
-  <ul class="list list-items">
-    {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <time>{{ post.date | date: "%b %d, %Y" }}</time>
-      </li>
-    {% endfor %}
   </ul>
 </details>
