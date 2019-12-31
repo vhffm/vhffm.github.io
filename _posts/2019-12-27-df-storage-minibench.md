@@ -7,8 +7,8 @@ title: Dataframe Storage Mini-Benchmark
 Quick benchmark on how to read/write/store your Pandas dataframe if you don't want to read from CSV all the time. Conclusion:
 
 1. If file size matters, use Parquet
-2. If read speed matters, use Feather
-3. If both matter, use HDF5/Static
+2. If read speed matters, use Feather or HDF5/Static
+3. If both matter, use Parquet
 4. Write speeds don't differ much, except HDF5/PyTables and CSV
 5. Avoid CSV
 
