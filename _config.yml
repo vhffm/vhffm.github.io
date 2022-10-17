@@ -1,6 +1,8 @@
 title:            ChelebNet
 description:      .zZ
-url:              https://cheleb.net
+url:              https://vhffm.github.io
+domain:           vhffm.github.io
+#baseurl:          _site/
 permalink:        pretty
 timezone:         Europe/Oslo
 sass:
